@@ -121,6 +121,7 @@ WHERE vax.continent is not null ) unadj
 SELECT *, (RollingCountVAX_adj/population)*100 as PercentagePopVaxed
 FROM temp_PercentPopVaxed
 
+--Concluding Remarks
 --Some countries has rate above 100%. This may suggests that citizens from that country recieves more than the frist dose.
 --The collumn New_vaccinations only accounts for every vaccine given without accounting for the number of dose reciever already have which may explain the "unusa" rate.
 
